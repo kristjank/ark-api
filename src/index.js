@@ -9,15 +9,12 @@ var Peer = require('./peer.js');
 var Block = require('./block.js');
 var Signature = require('./signature.js');
 var Delegate = require('./delegate.js');
-var Dapp = require('./dapp.js');
 var MultiSignature = require('./multi_signature.js');
 
 module.exports = {
     // Account
-    openAccount: Account.openAccount,
     getBalance: Account.getBalance,
     getPublicKey: Account.getPublicKey,
-    generatePublicKey: Account.generatePublicKey,
     getAccount: Account.getAccount,
     getVotes: Account.getVotes,
     vote: Account.vote,
@@ -55,21 +52,6 @@ module.exports = {
     getVoters: Delegate.getVoters,
     enableForging: Delegate.enableForging,
     disableForging: Delegate.disableForging,
-
-    //Dapp
-    registerDapp: Dapp.registerDapp,
-    getDapps: Dapp.getDapps,
-    getDaap: Dapp.getDaap,
-    searchDappStore: Dapp.searchDappStore,
-    installDapp: Dapp.installDapp,
-    installedDapps: Dapp.installedDapps,
-    installedDappsIds: Dapp.installedDappsIds,
-    uninstallDapp: Dapp.uninstallDapp,
-    launchDapp: Dapp.launchDapp,
-    installing: Dapp.installing,
-    launched: Dapp.launched,
-    categories: Dapp.categories,
-    stopDapp: Dapp.stopDapp,
 
     //MultiSignature
     getPendingMultiSignatureTransactions: MultiSignature.getPendingMultiSignatureTransactions,
