@@ -1,0 +1,27 @@
+{
+  "name": "ark-api",
+  "version": "1.0.1",
+  "description": "A Node.JS module which provides an wrapper for the Ark API.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArkEcosystem/ark-api.git"
+  },
+  "keywords": [
+    "Ark",
+    "API",
+    "Node.js"
+  ],
+  "author": "vrlc92 <vrlc92@gmail.com> (https://br.linkedin.com/in/vrlc92)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArkEcosystem/ark-api/issues"
+  },
+  "homepage": "https://github.com/ArkEcosystem/ark-api#readme",
+  "dependencies": {
+    "request": "2.72.0"
+  }
+}
