@@ -20,35 +20,6 @@ A Node.JS module which provides an wrapper for the [Ark API].
 ## Accounts
 Account related API calls.
 
-### Open account
-Get information about an account.
-
-**Request**
-```js
-var arkAPI = require("ark-api");
-arkAPI.openAccount("secret key of account",
-  function(error, success, response) {
-    console.log(response);
-});
-```
-
-**Response**
-```
-{
-  "success": true,
-  "account": {
-    "address": "Address of account. String",
-    "unconfirmedBalance": "Unconfirmed balance of account. Integer",
-    "balance": "Balance of account. Integer",
-    "publicKey": "Public key of account. Hex",
-    "unconfirmedSignature": "If account enabled second signature, but it's still not confirmed. Boolean: true or false",
-    "secondSignature": "If account enabled second signature. Boolean: true or false",
-    "secondPublicKey": "Second signature public key. Hex",
-    "username": "Username of account."
-  }
-}
-```
-
 ### Get balance
 Get the balance of an account.
 
@@ -81,25 +52,6 @@ arkAPI.getPublicKey("Address of the account",
 });
 ```
 
-**Response**
-```
-{
-  "success": true,
-  "publicKey": "Public key of account. Hex"
-}
-```
-
-### Generate public key
-Returns the public key of the provided secret key.
-
-**Request**
-```js
-var arkAPI = require("ark-api");
-arkAPI.generatePublicKey("secret key of account",
-  function(error, success, response) {
-    console.log(response);
-});
-```
 **Response**
 ```
 {
