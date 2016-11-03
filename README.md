@@ -806,7 +806,7 @@ arkAPI.getAccountsOfMultisignature("Public key of multi-signature account (Strin
 }
 ```
 
-##
+## License
 
 This documentation is based on: https://github.com/LiskHQ/lisk-docs/blob/development/APIReference.md
 
