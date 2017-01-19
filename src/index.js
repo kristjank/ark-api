@@ -49,6 +49,8 @@ module.exports = {
     enableDelegateOnAccount: Delegate.enableDelegateOnAccount,
     getDelegates: Delegate.getDelegates,
     getDelegate: Delegate.getDelegate,
+    getDelegateByPublicKey: Delegate.getByPublicKey,
+    getDelegateByUsername: Delegate.getByUsername,
     getVoters: Delegate.getVoters,
     enableForging: Delegate.enableForging,
     disableForging: Delegate.disableForging,
