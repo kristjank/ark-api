@@ -33,7 +33,7 @@ Delegate.getDelegates = function(qs, callback) {
   }, callback);
 };
 
-Delegate.getDelegateByUsername = function(username, callback) {
+Delegate.getByUsername = function(username, callback) {
   Api.get({
     url: options.url + '/api/delegates/get',
     qs: {
@@ -43,7 +43,7 @@ Delegate.getDelegateByUsername = function(username, callback) {
   }, callback);
 };
 
-Delegate.getDelegateByPublicKey = function(publicKey, callback) {
+Delegate.getByPublicKey = function(publicKey, callback) {
   Api.get({
     url: options.url + '/api/delegates/get',
     qs: {
@@ -53,7 +53,7 @@ Delegate.getDelegateByPublicKey = function(publicKey, callback) {
   }, callback);
 };
 
-Delegate.getDelegate = Delegate.getDelegateByUsername;
+Delegate.getDelegate = Delegate.getByUsername;
 
 Delegate.getVoters = function(publicKey, callback) {
   Api.get({
