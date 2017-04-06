@@ -108,7 +108,7 @@ arkAPI.getVotes("Address of the account",
 ```
 
 ### Vote for the selected delegates
-Vote for the selected delegates. Maximum of 33 delegates at once.
+Vote for the selected delegate - only 1 delegate can be voted from each Ark address at a time.
 
 **Request**
 ```js
